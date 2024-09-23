@@ -1,0 +1,1820 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hii",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there, how can I help you?",
+          "Hey! Welcome to our banking support. What do you need assistance with?",
+          "Good day! How may I assist you?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "Goodbye! Feel free to return if you have more questions.",
+          "Take care! Let me know if there's anything else I can help with.",
+          "Bye! Have a great day ahead."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["You're welcome!", "Glad I could assist!", "My pleasure."]
+      },
+      {
+        "tag": "balance_inquiry",
+        "patterns": [
+          "What's my account balance?",
+          "Check my balance",
+          "How much money do I have?",
+          "Account balance"
+        ],
+        "responses": [
+          "To check your account balance, please provide your account number or login to our mobile app or website.",
+          "You can easily check your account balance through our mobile app or website. Need assistance with that?"
+        ]
+      },
+      {
+        "tag": "transaction_history",
+        "patterns": [
+          "Can I see my transaction history?",
+          "Show my recent transactions",
+          "Transaction history"
+        ],
+        "responses": [
+          "To view your transaction history, please log in to your online banking account or mobile app.",
+          "You can access your transaction history through our digital banking platforms. Need guidance on how to do that?"
+        ]
+      },
+      {
+        "tag": "card_issues",
+        "patterns": [
+          "My card is lost",
+          "My card is stolen",
+          "I need to block my card"
+        ],
+        "responses": [
+          "I'm sorry to hear that. To block your card or report it lost/stolen, please call our 24/7 customer service hotline at [insert phone number].",
+          "I understand, for security reasons, it's important to block your card immediately. You can do this by contacting our customer service team at any time."
+        ]
+      },
+      {
+        "tag": "loan_information",
+        "patterns": [
+          "I want to know about loans",
+          "What kinds of loans do you offer?",
+          "Loan options"
+        ],
+        "responses": [
+          "We offer various loan options including personal loans, home loans, and car loans. Would you like more details on any specific loan type?",
+          "Our bank provides a range of loan products tailored to different needs such as personal loans, mortgages, and more. How can I assist you further?"
+        ]
+      },
+      {
+        "tag": "interest_rates",
+        "patterns": [
+          "What are your current interest rates?",
+          "Interest rates",
+          "Rates for savings account"
+        ],
+        "responses": [
+          "Our current interest rates vary depending on the type of account or loan. For the most accurate information, please visit our website or contact our customer service.",
+          "Interest rates may vary based on the type of account or loan. You can find the latest rates on our website or inquire with our customer service team."
+        ]
+      },
+      {
+        "tag": "transfer_funds",
+        "patterns": [
+          "Can I transfer money between accounts?",
+          "Transfer funds",
+          "Send money to [recipient]"
+        ],
+        "responses": [
+          "Sure, you can easily transfer funds between your accounts using our online banking platform. Would you like assistance with that?",
+          "To transfer funds, log in to your account online or via our mobile app and select the transfer option. Need guidance?"
+        ]
+      },
+      {
+        "tag": "account_opening",
+        "patterns": [
+          "How do I open a new account?",
+          "Open a new account",
+          "Account registration process"
+        ],
+        "responses": [
+          "Opening a new account is simple! You can start the process online on our website or visit any of our branches. Would you like more information?",
+          "To open a new account, you can visit our website to fill out an application or visit one of our branches with the necessary documents. Need assistance with the process?"
+        ]
+      },
+      {
+        "tag": "password_reset",
+        "patterns": [
+          "I forgot my password",
+          "Reset my password",
+          "Can't log in"
+        ],
+        "responses": [
+          "If you've forgotten your password, you can reset it by clicking on the 'Forgot Password' link on our login page. Would you like step-by-step instructions?",
+          "No worries! You can easily reset your password by verifying your identity through our password reset process. Need assistance with that?"
+        ]
+      },
+      {
+        "tag": "branch_locations",
+        "patterns": [
+          "Where is the nearest branch?",
+          "Branch locations",
+          "Find a branch"
+        ],
+        "responses": [
+          "You can find the nearest branch to you by using our branch locator tool on our website or mobile app. Would you like the link to the locator?",
+          "To locate the nearest branch, you can use our branch locator tool available on our website or mobile app. Need help finding it?"
+        ]
+      },
+      {
+        "tag": "customer_support_hours",
+        "patterns": [
+          "What are your customer service hours?",
+          "Customer support availability",
+          "When can I reach customer service?"
+        ],
+        "responses": [
+          "Our customer support team is available [mention hours] to assist you. Feel free to reach out to us during those times for any queries or assistance.",
+          "You can contact our customer support team [mention hours] for assistance with any banking-related queries. Need further clarification?"
+        ]
+      },
+      
+    {
+        "tag": "withdrawal_options",
+        "patterns": [
+          "How can I withdraw money?",
+          "Withdrawal methods",
+          "Options for cash withdrawal"
+        ],
+        "responses": [
+          "You can withdraw money from our ATMs, visit our branches, or use our mobile banking app for convenient withdrawals. Need more details?",
+          "We offer various withdrawal options including ATMs, branch visits, and mobile banking. Would you like assistance with any specific method?"
+        ]
+      },
+      {
+        "tag": "ATM_withdrawal_limit",
+        "patterns": [
+          "What is the daily withdrawal limit at your ATMs?",
+          "ATM withdrawal limit",
+          "Maximum cash withdrawal from ATM"
+        ],
+        "responses": [
+          "Our ATM withdrawal limit is [mention limit] per day for your security. Need more information?",
+          "The daily withdrawal limit at our ATMs is [mention limit]. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "branch_withdrawal_policy",
+        "patterns": [
+          "Are there any restrictions on cash withdrawals at branches?",
+          "Branch withdrawal policy",
+          "Limits on cash withdrawal from branches"
+        ],
+        "responses": [
+          "There are no specific restrictions on cash withdrawals at our branches, but large withdrawals may require advance notice for security reasons. Need more details?",
+          "While there are no strict limits on cash withdrawals at branches, large amounts may require prior notice for security purposes. Need assistance?"
+        ]
+      },
+      {
+        "tag": "mobile_banking_withdrawal",
+        "patterns": [
+          "Can I withdraw money using the mobile banking app?",
+          "Withdrawal via mobile app",
+          "Mobile banking cash withdrawal"
+        ],
+        "responses": [
+          "Yes, you can withdraw money using our mobile banking app from your linked accounts. Would you like guidance on how to do this?",
+          "Certainly! You can initiate withdrawals through our mobile banking app. Need assistance with the process?"
+        ]
+      },
+      {
+        "tag": "withdrawal_fee",
+        "patterns": [
+          "Is there a fee for cash withdrawals?",
+          "Withdrawal charges",
+          "Fee for ATM withdrawals"
+        ],
+        "responses": [
+          "There may be withdrawal fees depending on your account type and the ATM used. It's best to check our fee schedule or contact customer service for details. Need assistance?",
+          "Withdrawal fees vary depending on your account type and the ATM network. You can find detailed information on our fee schedule or by contacting customer service."
+        ]
+      },
+      {
+        "tag": "cash_withdrawal_security",
+        "patterns": [
+          "How do you ensure the security of cash withdrawals?",
+          "Security measures for cash withdrawals",
+          "Precautions during ATM withdrawals"
+        ],
+        "responses": [
+          "We employ various security measures including PIN protection, card chip technology, and surveillance to ensure the safety of cash withdrawals. Need more information?",
+          "Your security is our top priority. We implement measures such as PIN protection and surveillance to safeguard cash withdrawals. Need further details?"
+        ]
+      },
+      {
+        "tag": "international_withdrawals",
+        "patterns": [
+          "Can I withdraw cash internationally?",
+          "ATM withdrawals abroad",
+          "Using ATMs overseas"
+        ],
+        "responses": [
+          "Yes, you can withdraw cash internationally from ATMs that accept your card. Just be aware of any foreign transaction fees that may apply. Need more details?",
+          "You can withdraw cash abroad from ATMs that support international transactions. Just ensure you're aware of any applicable fees. Need assistance?"
+        ]
+      },
+      {
+        "tag": "ATM_network",
+        "patterns": [
+          "Which ATM network can I use for withdrawals?",
+          "Supported ATM networks",
+          "ATM partners"
+        ],
+        "responses": [
+          "You can use our ATMs as well as those within our network for withdrawals. Need more information about our ATM partners?",
+          "Our ATM network includes [mention partners], allowing you to withdraw cash conveniently. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "emergency_cash_withdrawal",
+        "patterns": [
+          "What should I do in case of emergency cash needs?",
+          "Emergency cash withdrawal",
+          "Urgent need for cash"
+        ],
+        "responses": [
+          "In case of emergency, you can contact our customer service to explore options such as emergency cash advances or temporary limit increases. Need assistance?",
+          "For urgent cash needs, we have provisions such as emergency cash advances or temporary limit increases. Feel free to contact customer service for assistance."
+        ]
+      },
+      {
+        "tag": "cash_withdrawal_limits",
+        "patterns": [
+          "Are there any limits on cash withdrawals?",
+          "Withdrawal limits",
+          "Maximum cash amount I can withdraw"
+        ],
+        "responses": [
+          "Yes, there are daily withdrawal limits for your security. These limits vary depending on your account type and may be adjusted upon request. Need more details?",
+          "To ensure security, we have daily withdrawal limits in place. These limits depend on your account type and can be adjusted upon request. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "cash_withdrawal_hours",
+        "patterns": [
+          "What are the hours for cash withdrawals?",
+          "Cash withdrawal timings",
+          "When can I withdraw money?"
+        ],
+        "responses": [
+          "You can withdraw cash from our ATMs 24/7. For branch withdrawals, please check our branch hours. Need assistance with anything else?",
+          "Our ATMs are available for cash withdrawals round the clock. For branch withdrawals, please check our operating hours. Need further assistance?"
+        ]
+      },
+      {
+        "tag": "cash_withdrawal_confirmation",
+        "patterns": [
+          "How do I confirm a cash withdrawal?",
+          "Confirmation of cash withdrawal",
+          "Verification of ATM withdrawals"
+        ],
+        "responses": [
+          "Upon completing a cash withdrawal, you'll receive a transaction receipt for confirmation. Need more information?",
+          "After making a cash withdrawal, you'll receive a transaction receipt as confirmation. Need further details?"
+        ]
+      },
+      {
+        "tag": "withdrawal_fraud_prevention",
+        "patterns": [
+          "How do you prevent fraud during cash withdrawals?",
+          "Fraud prevention for ATM withdrawals",
+          "Security measures against withdrawal fraud"
+        ],
+        "responses": [
+          "We employ advanced fraud detection systems and monitoring to prevent unauthorized cash withdrawals. Need more information?",
+          "Your security is paramount. We utilize advanced fraud prevention measures to safeguard against unauthorized cash withdrawals. Need further details?"
+        ]
+      },
+      {
+        "tag": "cash_withdrawal_currency_options",
+        "patterns": [
+          "In which currencies can I withdraw cash?",
+          "Supported withdrawal currencies",
+          "Cash withdrawal currency options"
+        ],
+        "responses": [
+          "You can withdraw cash in the local currency of the country where the ATM is located. Need more details?",
+          "Cash withdrawals are typically available in the local currency of the country where the ATM is located. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "apply_for_loan",
+        "patterns": [
+          "How do I apply for a loan?",
+          "Loan application process",
+          "Applying for a loan"
+        ],
+        "responses": [
+          "To apply for a loan, you can fill out an application form online or visit one of our branches. Need assistance with the process?",
+          "Applying for a loan is easy! You can start the process online or visit our branch to fill out an application. Need guidance?"
+        ]
+      },
+      {
+        "tag": "loan_eligibility_criteria",
+        "patterns": [
+          "What are the eligibility criteria for loans?",
+          "Loan qualification requirements",
+          "Eligibility for loans"
+        ],
+        "responses": [
+          "Loan eligibility criteria vary depending on the type of loan. Common factors include credit score, income, and employment status. Need more information?",
+          "Loan eligibility is determined based on various factors such as credit history, income, and employment status. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "loan_approval_process",
+        "patterns": [
+          "How long does it take to get loan approval?",
+          "Loan approval timeline",
+          "Process for loan approval"
+        ],
+        "responses": [
+          "The loan approval process may vary depending on the type of loan and documentation required. Typically, it takes [mention duration] for approval. Need more details?",
+          "Loan approval timelines vary based on factors such as the type of loan and completeness of documentation. On average, it takes [mention duration]. Need further assistance?"
+        ]
+      },
+      {
+        "tag": "loan_repayment_terms",
+        "patterns": [
+          "What are the repayment terms for loans?",
+          "Loan repayment duration",
+          "Terms for repaying loans"
+        ],
+        "responses": [
+          "Loan repayment terms vary depending on the type of loan. Typically, it ranges from [mention duration] with fixed or variable interest rates. Need more information?",
+          "Loan repayment terms are flexible and depend on factors such as the loan amount and type. We offer terms ranging from [mention duration] with competitive interest rates. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "credit_card_application",
+        "patterns": [
+          "How do I apply for a credit card?",
+          "Credit card application process",
+          "Applying for a credit card"
+        ],
+        "responses": [
+          "You can apply for a credit card online through our website or visit our branch to fill out an application form. Need assistance with the process?",
+          "Applying for a credit card is simple! You can start the process online or visit our branch to fill out an application. Need guidance?"
+        ]
+      },
+      {
+        "tag": "credit_card_eligibility_criteria",
+        "patterns": [
+          "What are the eligibility criteria for credit cards?",
+          "Credit card qualification requirements",
+          "Eligibility for credit cards"
+        ],
+        "responses": [
+          "Credit card eligibility criteria include factors such as credit score, income, and credit history. Need more information?",
+          "To qualify for a credit card, you need to meet certain criteria including credit score, income, and credit history. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "credit_card_approval_process",
+        "patterns": [
+          "How long does it take to get credit card approval?",
+          "Credit card approval timeline",
+          "Process for credit card approval"
+        ],
+        "responses": [
+          "Credit card approval timelines vary depending on factors such as verification and documentation. Typically, it takes [mention duration]. Need more details?",
+          "Credit card approval timelines depend on various factors such as verification and documentation. On average, it takes [mention duration]. Need further assistance?"
+        ]
+      },
+      {
+        "tag": "credit_limit_inquiry",
+        "patterns": [
+          "How can I check my credit limit?",
+          "Credit card limit inquiry",
+          "Checking credit limit"
+        ],
+        "responses": [
+          "You can check your credit limit through our mobile app, online banking, or by contacting customer service. Need assistance with that?",
+          "To check your credit limit, log in to our mobile app or online banking platform. You can also contact customer service for assistance. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "credit_card_fees",
+        "patterns": [
+          "What are the fees associated with credit cards?",
+          "Credit card charges",
+          "Fees for using credit cards"
+        ],
+        "responses": [
+          "Credit card fees may include annual fees, late payment fees, and foreign transaction fees. You can find detailed information in our terms and conditions. Need more details?",
+          "Fees associated with credit cards vary and may include annual fees, late payment fees, and foreign transaction fees. You can refer to our terms and conditions for detailed information. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "credit_card_rewards_program",
+        "patterns": [
+          "Do you offer rewards programs for credit cards?",
+          "Credit card rewards",
+          "Benefits of using credit cards"
+        ],
+        "responses": [
+          "Yes, we offer rewards programs for our credit cards including cashback, points, and travel rewards. Need more information about our rewards program?",
+          "Our credit cards come with various rewards programs such as cashback, points, and travel rewards. Need further details?"
+        ]
+      },
+      {
+        "tag": "credit_card_security_features",
+        "patterns": [
+          "What security features do your credit cards have?",
+          "Credit card security measures",
+          "Safety features of credit cards"
+        ],
+        "responses": [
+          "Our credit cards are equipped with security features such as EMV chip technology, fraud monitoring, and zero-liability protection. Need more information?",
+          "Your security is our priority. Our credit cards feature advanced security measures including EMV chip technology, fraud monitoring, and zero-liability protection. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "credit_card_payment_methods",
+        "patterns": [
+          "How can I make payments on my credit card?",
+          "Credit card payment options",
+          "Ways to pay credit card bills"
+        ],
+        "responses": [
+          "You can make credit card payments through our mobile app, online banking, at our branches, or via mail. Need assistance with payment methods?",
+          "We offer various methods for credit card payments including mobile app, online banking, branch visits, and mail-in payments. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "credit_card_upgrade_options",
+        "patterns": [
+          "Can I upgrade my credit card?",
+          "Upgrade options for credit cards",
+          "Upgrading my credit card"
+        ],
+        "responses": [
+          "Yes, you can upgrade your credit card to a higher-tier card with enhanced benefits. Need more information about our upgrade options?",
+          "You can upgrade your credit card to enjoy additional benefits and features. Need further details about our upgrade options?"
+        ]
+    },
+    {
+        "tag": "loan_interest_rates",
+        "patterns": [
+          "What are your current loan interest rates?",
+          "Loan interest rates",
+          "Rates for personal loans"
+        ],
+        "responses": [
+          "Our loan interest rates vary depending on the type of loan and your creditworthiness. It's best to check our website or contact customer service for the latest rates. Need more information?",
+          "Loan interest rates may vary based on factors such as the type of loan and your credit score. You can find the latest rates on our website or by contacting customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "loan_payment_methods",
+        "patterns": [
+          "How can I make loan payments?",
+          "Loan repayment options",
+          "Ways to pay loan installments"
+        ],
+        "responses": [
+          "You can make loan payments through our online banking platform, mobile app, at our branches, or via automatic deductions. Need assistance with payment methods?",
+          "We offer various convenient methods for making loan payments including online banking, mobile app, branch visits, and automatic deductions. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "loan_grace_period",
+        "patterns": [
+          "Is there a grace period for loan payments?",
+          "Loan payment grace period",
+          "Extension for loan repayment"
+        ],
+        "responses": [
+          "We may offer a grace period for loan payments depending on the type of loan and your repayment history. It's best to contact customer service for details. Need more information?",
+          "Depending on your loan type and repayment history, you may be eligible for a grace period. You can inquire about this by contacting customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "loan_default_consequences",
+        "patterns": [
+          "What happens if I default on my loan?",
+          "Loan default consequences",
+          "Penalties for missing loan payments"
+        ],
+        "responses": [
+          "Defaulting on a loan may result in late fees, negative impact on your credit score, and legal action. It's important to contact us if you're facing difficulties in making payments. Need more information?",
+          "Defaulting on a loan can have serious consequences including late fees, damage to your credit score, and potential legal action. If you're experiencing financial difficulties, please reach out to discuss possible solutions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "loan_preapproval_process",
+        "patterns": [
+          "Do you offer preapproval for loans?",
+          "Loan preapproval process",
+          "Prequalified for loans"
+        ],
+        "responses": [
+          "Yes, we offer preapproval for loans based on your creditworthiness and financial situation. You can check your preapproval status by contacting customer service or visiting our branch. Need more information?",
+          "We provide preapproval for loans to eligible customers. You can inquire about your preapproval status by contacting customer service or visiting our branch. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "loan_terms_and_conditions",
+        "patterns": [
+          "Where can I find the terms and conditions for loans?",
+          "Loan agreement details",
+          "Terms of loan agreement"
+        ],
+        "responses": [
+          "You can find the terms and conditions for loans on our website or by contacting customer service. It's important to review these carefully before proceeding with a loan. Need assistance?",
+          "The terms and conditions for loans are available on our website or by contacting customer service. We recommend reviewing these thoroughly before applying for a loan. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "debit_card_activation",
+        "patterns": [
+          "How do I activate my debit card?",
+          "Debit card activation process",
+          "Activating my new debit card"
+        ],
+        "responses": [
+          "You can activate your debit card by calling the activation number provided with the card or by using it at any ATM with your PIN. Need more information?",
+          "To activate your debit card, simply call the activation number provided or use it at any ATM with your PIN. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_limits",
+        "patterns": [
+          "Are there any limits on debit card transactions?",
+          "Debit card transaction limits",
+          "Maximum amount for debit card purchases"
+        ],
+        "responses": [
+          "Yes, there are daily transaction limits on debit cards for security purposes. These limits can be adjusted upon request. Need more details?",
+          "Debit card transactions are subject to daily limits for security reasons. You can request adjustments to these limits as needed. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_security_features",
+        "patterns": [
+          "What security features do your debit cards have?",
+          "Debit card security measures",
+          "Safety features of debit cards"
+        ],
+        "responses": [
+          "Our debit cards come with security features such as EMV chip technology, PIN protection, and fraud monitoring to ensure the safety of your transactions. Need more information?",
+          "Your security is important to us. Our debit cards are equipped with advanced security features including EMV chip technology, PIN protection, and fraud monitoring. Need further details?"
+        ]
+      },
+      {
+        "tag": "debit_card_replacement",
+        "patterns": [
+          "How can I get a replacement for my lost or damaged debit card?",
+          "Debit card replacement process",
+          "Replacing lost debit card"
+        ],
+        "responses": [
+          "To request a replacement for your lost or damaged debit card, please contact customer service or visit our branch. Need assistance?",
+          "If your debit card is lost or damaged, you can request a replacement by contacting customer service or visiting our branch. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "debit_card_transaction_disputes",
+        "patterns": [
+          "How do I dispute a transaction on my debit card?",
+          "Debit card transaction dispute process",
+          "Disputing unauthorized debit card charges"
+        ],
+        "responses": [
+          "If you notice any unauthorized transactions on your debit card, please contact customer service immediately to initiate a dispute process. Need more information?",
+          "If you believe there's an error or unauthorized transaction on your debit card, please contact customer service to file a dispute. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_usage_abroad",
+        "patterns": [
+          "Can I use my debit card abroad?",
+          "Debit card usage overseas",
+          "Using debit card internationally"
+        ],
+        "responses": [
+          "Yes, you can use your debit card abroad at ATMs and merchants that accept international cards. Just be aware of any foreign transaction fees that may apply. Need more details?",
+          "You can use your debit card internationally at ATMs and merchants that accept international cards. Please note any applicable foreign transaction fees. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_pin_reset",
+        "patterns": [
+          "How do I reset my debit card PIN?",
+          "Debit card PIN reset process",
+          "Resetting my PIN for debit card"
+        ],
+        "responses": [
+          "To reset your debit card PIN, you can visit any of our branches with proper identification or contact customer service for assistance. Need more information?",
+          "If you need to reset your debit card PIN, you can do so at any of our branches with proper identification or by contacting customer service. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "debit_card_daily_balance_alerts",
+        "patterns": [
+          "Can I receive daily balance alerts for my debit card?",
+          "Debit card balance notifications",
+          "Alerts for low balance on debit card"
+        ],
+        "responses": [
+          "Yes, you can set up daily balance alerts for your debit card through our online banking platform or mobile app. Need assistance with setting it up?",
+          "You can receive daily balance alerts for your debit card by setting it up through our online banking platform or mobile app. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "debit_card_overdraft_protection",
+        "patterns": [
+          "Do you offer overdraft protection for debit cards?",
+          "Debit card overdraft coverage",
+          "Protection against overdrafts on debit card"
+        ],
+        "responses": [
+          "Yes, we offer overdraft protection for eligible debit cards to help cover transactions that exceed your available balance. Need more information?",
+          "We provide overdraft protection for eligible debit cards to prevent declined transactions due to insufficient funds. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_freeze_unlock",
+        "patterns": [
+          "Can I freeze and unfreeze my debit card?",
+          "Debit card freeze and unlock",
+          "Temporarily lock my debit card"
+        ],
+        "responses": [
+          "Yes, you can freeze and unfreeze your debit card through our online banking platform or mobile app for added security. Need assistance?",
+          "You have the option to freeze and unfreeze your debit card for added security through our online banking platform or mobile app. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "debit_card_transaction_limits",
+        "patterns": [
+          "Are there any limits on daily debit card transactions?",
+          "Debit card transaction limits",
+          "Maximum amount for debit card purchases"
+        ],
+        "responses": [
+          "Yes, there are daily transaction limits for debit cards for security purposes. These limits can be adjusted upon request. Need more details?",
+          "Debit card transactions are subject to daily limits for security reasons. You can request adjustments to these limits as needed. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "debit_card_transaction_history",
+        "patterns": [
+          "How can I view my debit card transaction history?",
+          "Debit card transaction records",
+          "Accessing debit card transactions"
+        ],
+        "responses": [
+          "You can view your debit card transaction history through our online banking platform or mobile app. Need assistance with accessing it?",
+          "You can easily access your debit card transaction history through our online banking platform or mobile app. Need further guidance?"
+        ]
+      },
+      
+    {
+        "tag": "order_checkbook",
+        "patterns": [
+          "How can I order a checkbook?",
+          "Ordering new checks",
+          "Requesting a checkbook"
+        ],
+        "responses": [
+          "You can order a checkbook through our online banking platform, mobile app, or by visiting our branch. Need assistance with the process?",
+          "Ordering a checkbook is easy! You can do it through our online banking platform, mobile app, or by visiting our branch. Need guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_delivery_time",
+        "patterns": [
+          "How long does it take to receive a checkbook?",
+          "Checkbook delivery time",
+          "When will I get my new checks?"
+        ],
+        "responses": [
+          "The delivery time for checkbooks may vary depending on your location and shipping method. Typically, it takes [mention duration]. Need more information?",
+          "Checkbook delivery times vary based on factors such as location and shipping method. On average, it takes [mention duration]. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_design_options",
+        "patterns": [
+          "Do you offer different design options for checkbooks?",
+          "Checkbook customization",
+          "Design choices for new checks"
+        ],
+        "responses": [
+          "Yes, we offer various design options for checkbooks including custom designs, patterns, and themes. Need more information about our design choices?",
+          "You can choose from a variety of design options for your checkbooks including custom designs, patterns, and themes. Need further details?"
+        ]
+      },
+      {
+        "tag": "checkbook_security_features",
+        "patterns": [
+          "What security features do your checkbooks have?",
+          "Checkbook safety measures",
+          "Security features of new checks"
+        ],
+        "responses": [
+          "Our checkbooks come with security features such as watermarks, microprinting, and security ink to prevent fraud. Need more information?",
+          "Your security is our priority. Our checkbooks are equipped with advanced security features including watermarks, microprinting, and security ink to deter fraud. Need further details?"
+        ]
+      },
+      {
+        "tag": "checkbook_reorder_process",
+        "patterns": [
+          "How do I reorder checks?",
+          "Reordering a checkbook",
+          "Requesting additional checks"
+        ],
+        "responses": [
+          "You can reorder checks through our online banking platform, mobile app, or by contacting customer service. Need assistance with the reorder process?",
+          "Reordering checks is simple! You can do it through our online banking platform, mobile app, or by contacting customer service. Need guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_cancellation_process",
+        "patterns": [
+          "How can I cancel a checkbook order?",
+          "Canceling new checks",
+          "Requesting checkbook cancellation"
+        ],
+        "responses": [
+          "To cancel a checkbook order, please contact customer service as soon as possible with your order details. Need more information?",
+          "If you need to cancel a checkbook order, please contact customer service immediately with your order details. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_lost_or_stolen",
+        "patterns": [
+          "What should I do if my checkbook is lost or stolen?",
+          "Lost or stolen checks",
+          "Reporting missing checks"
+        ],
+        "responses": [
+          "If your checkbook is lost or stolen, please contact customer service immediately to report it and request a stop payment. Need more information?",
+          "In case of a lost or stolen checkbook, please contact customer service immediately to report it and request a stop payment on the missing checks. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_stop_payment",
+        "patterns": [
+          "How can I request a stop payment on a check?",
+          "Stopping payment on a check",
+          "Canceling a check"
+        ],
+        "responses": [
+          "You can request a stop payment on a check through our online banking platform, mobile app, or by contacting customer service. Need assistance with the process?",
+          "Requesting a stop payment on a check is easy! You can do it through our online banking platform, mobile app, or by contacting customer service. Need guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_fee_inquiry",
+        "patterns": [
+          "Are there any fees for ordering a checkbook?",
+          "Checkbook charges",
+          "Cost of new checks"
+        ],
+        "responses": [
+          "There may be fees associated with ordering a checkbook depending on your account type. You can find detailed information in our fee schedule or by contacting customer service. Need more details?",
+          "Fees for ordering a checkbook vary depending on your account type. You can refer to our fee schedule or contact customer service for detailed information. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_balance_deduction",
+        "patterns": [
+          "Is the cost of a checkbook deducted from my account balance?",
+          "Checkbook payment deduction",
+          "Deducting checkbook fees from account"
+        ],
+        "responses": [
+          "Yes, the cost of a checkbook is typically deducted from your account balance. You can find the deduction details in your account statement. Need more information?",
+          "The cost of a checkbook is usually deducted from your account balance. You can review the deduction details in your account statement. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_tracking",
+        "patterns": [
+          "Can I track the status of my checkbook order?",
+          "Checking checkbook delivery status",
+          "Track checkbook shipment"
+        ],
+        "responses": [
+          "Yes, you can track the status of your checkbook order through our online banking platform, mobile app, or by contacting customer service. Need assistance with tracking?",
+          "You can easily track the status of your checkbook order through our online banking platform, mobile app, or by contacting customer service. Need guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_order_limits",
+        "patterns": [
+          "Are there any limits on the number of checks I can order?",
+          "Checkbook order restrictions",
+          "Maximum checks I can order"
+        ],
+        "responses": [
+          "Yes, there may be limits on the number of checks you can order depending on your account type. You can find this information in our account terms or by contacting customer service. Need more details?",
+          "There are limits on the number of checks you can order based on your account type. You can refer to our account terms or contact customer service for specific information. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_address_update",
+        "patterns": [
+          "How can I update my mailing address for checkbook delivery?",
+          "Changing checkbook delivery address",
+          "Update address for checkbook shipment"
+        ],
+        "responses": [
+          "To update your mailing address for checkbook delivery, please log in to your online banking account, visit our branch, or contact customer service. Need assistance?",
+          "You can update your mailing address for checkbook delivery by logging in to your online banking account, visiting our branch, or contacting customer service. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_missing_checks",
+        "patterns": [
+          "What should I do if I'm missing some checks from my checkbook?",
+          "Missing checks in my checkbook",
+          "Checkbook with missing pages"
+        ],
+        "responses": [
+          "If you're missing some checks from your checkbook, please contact customer service to report it and request a replacement. Need more information?",
+          "In case of missing checks from your checkbook, please contact customer service to report it and request a replacement. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_quality_issues",
+        "patterns": [
+          "What if I receive a checkbook with quality issues?",
+          "Issues with checkbook quality",
+          "Defective checks"
+        ],
+        "responses": [
+          "If you receive a checkbook with quality issues, please contact customer service to report it and request a replacement. Need more information?",
+          "In case of checkbook quality issues, please contact customer service to report it and request a replacement. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "checkbook_use_instructions",
+        "patterns": [
+          "Can you provide instructions on how to use a checkbook?",
+          "Using checks",
+          "Guidance for using a checkbook"
+        ],
+        "responses": [
+          "Certainly! Using a checkbook involves writing the payee's name, amount, and signing the check. You can find detailed instructions in the checkbook itself. Need more information?",
+          "Using a checkbook is simple! You write the payee's name, amount, and sign the check. Detailed instructions can be found in the checkbook itself. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "checkbook_endorsement_guidelines",
+        "patterns": [
+          "What are the endorsement guidelines for checks?",
+          "Check endorsement instructions",
+          "How to endorse a check"
+        ],
+        "responses": [
+          "When endorsing a check, sign your name on the back exactly as it appears on the front. You may also need to include 'For Deposit Only' if depositing into your account. Need more details?",
+          "When endorsing a check, make sure to sign your name exactly as it appears on the front. Additional endorsements may be required depending on how you plan to use the check. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_increase",
+        "patterns": [
+          "How can I increase my online transaction limit?",
+          "Increasing online transaction limit",
+          "Raising transaction limit for online banking"
+        ],
+        "responses": [
+          "To increase your online transaction limit, you can submit a request through our online banking platform or contact customer service for assistance. Need more information?",
+          "You can request an increase in your online transaction limit through our online banking platform or by contacting customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_decrease",
+        "patterns": [
+          "Can I decrease my online transaction limit?",
+          "Reducing online transaction limit",
+          "Lowering transaction limit for online banking"
+        ],
+        "responses": [
+          "Yes, you can request to decrease your online transaction limit for added security. Simply submit a request through our online banking platform or contact customer service. Need assistance?",
+          "If you wish to decrease your online transaction limit, you can submit a request through our online banking platform or contact customer service for assistance. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_explanation",
+        "patterns": [
+          "Why is there a limit on online transactions?",
+          "Explanation for online transaction limits",
+          "Reasons for transaction limit on online banking"
+        ],
+        "responses": [
+          "Online transaction limits are in place for security purposes to protect your account from unauthorized access and fraud. Need more information?",
+          "Transaction limits on online banking are designed to enhance security and prevent unauthorized transactions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_reset",
+        "patterns": [
+          "How often are online transaction limits reset?",
+          "Resetting online transaction limits",
+          "Frequency of transaction limit reset for online banking"
+        ],
+        "responses": [
+          "Online transaction limits may reset daily, weekly, or monthly depending on your account settings. You can check the reset frequency in your account details. Need more details?",
+          "The frequency of online transaction limit resets varies depending on your account settings. You can find this information in your account details. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_review",
+        "patterns": [
+          "Can my online transaction limit be reviewed?",
+          "Reviewing online transaction limits",
+          "Reevaluation of transaction limit for online banking"
+        ],
+        "responses": [
+          "Yes, your online transaction limit can be reviewed periodically based on your account activity and usage patterns. You can contact customer service for a review. Need more information?",
+          "Your online transaction limit may be reviewed periodically to ensure it meets your needs. If you'd like a review, please contact customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_types",
+        "patterns": [
+          "What types of online transaction limits are there?",
+          "Categories of online transaction limits",
+          "Different limits for online banking"
+        ],
+        "responses": [
+          "Online transaction limits may include daily, weekly, and monthly limits for various types of transactions such as transfers, payments, and withdrawals. Need more details?",
+          "Online transaction limits can be categorized into daily, weekly, and monthly limits for different types of transactions such as transfers, payments, and withdrawals. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_notification",
+        "patterns": [
+          "Do you notify customers when they reach their online transaction limit?",
+          "Notification for reaching online transaction limit",
+          "Alerts for exceeding transaction limit on online banking"
+        ],
+        "responses": [
+          "Yes, we provide notifications when you're approaching or have reached your online transaction limit. You can set up alerts through our online banking platform. Need assistance?",
+          "We offer notifications to alert you when you're nearing or have exceeded your online transaction limit. You can customize these alerts through our online banking platform. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_customization",
+        "patterns": [
+          "Can I customize my online transaction limits?",
+          "Adjusting online transaction limits",
+          "Personalizing transaction limits for online banking"
+        ],
+        "responses": [
+          "Yes, you can customize your online transaction limits based on your financial needs and preferences. Simply log in to your online banking account to make adjustments. Need more information?",
+          "You have the flexibility to customize your online transaction limits according to your financial requirements. Just log in to your online banking account to adjust them. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_usage",
+        "patterns": [
+          "How can I check my remaining online transaction limit?",
+          "Checking available online transaction limit",
+          "Viewing usage of transaction limit on online banking"
+        ],
+        "responses": [
+          "You can view your remaining online transaction limit by logging in to your online banking account and accessing the transaction limit details. Need assistance?",
+          "To check your available online transaction limit, simply log in to your online banking account and view the transaction limit details. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_enforcement",
+        "patterns": [
+          "What happens if I exceed my online transaction limit?",
+          "Consequences of exceeding online transaction limit",
+          "Penalties for surpassing transaction limit on online banking"
+        ],
+        "responses": [
+          "Exceeding your online transaction limit may result in transaction failures or temporary suspension of online banking privileges. It's important to stay within your limits. Need more information?",
+          "If you exceed your online transaction limit, you may experience transaction failures or temporary suspension of online banking privileges. Please ensure you stay within your limits. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_security",
+        "patterns": [
+          "How does the online transaction limit enhance security?",
+          "Security benefits of online transaction limit",
+          "Protection provided by transaction limit on online banking"
+        ],
+        "responses": [
+          "The online transaction limit acts as an additional layer of security by limiting the amount of funds that can be transferred or withdrawn in a single transaction. Need more details?",
+          "The online transaction limit helps enhance security by limiting the potential financial loss in case of unauthorized access to your account. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_responsibility",
+        "patterns": [
+          "Who is responsible for managing my online transaction limit?",
+          "Accountability for online transaction limit management",
+          "Role in overseeing transaction limit on online banking"
+        ],
+        "responses": [
+          "You are responsible for managing your online transaction limit to ensure it meets your financial needs while maintaining security. We provide tools and assistance to help you manage it effectively. Need more information?",
+          "Managing your online transaction limit is your responsibility to ensure it aligns with your financial requirements and security considerations. We're here to support you with tools and guidance. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_adjustment_timeframe",
+        "patterns": [
+          "How long does it take for an online transaction limit adjustment to take effect?",
+          "Adjustment timeframe for online transaction limit",
+          "When does the new transaction limit apply on online banking?"
+        ],
+        "responses": [
+          "Online transaction limit adjustments typically take effect immediately or within [mention timeframe] after submission. You can verify the timeframe with customer service. Need more details?",
+          "Online transaction limit adjustments usually take effect immediately or within [mention timeframe] after submission. You can confirm the exact timeframe with customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_exceed_notification",
+        "patterns": [
+          "Will I be notified if I exceed my online transaction limit?",
+          "Alert for surpassing online transaction limit",
+          "Notification for exceeding transaction limit on online banking"
+        ],
+        "responses": [
+          "Yes, we provide notifications when you exceed your online transaction limit. You can customize these alerts through our online banking platform. Need assistance?",
+          "You'll receive notifications if you exceed your online transaction limit. You can tailor these alerts to your preferences through our online banking platform. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_usage_tracking",
+        "patterns": [
+          "Can I track my online transaction limit usage over time?",
+          "Monitoring usage of online transaction limit",
+          "Tracking transaction limit usage on online banking"
+        ],
+        "responses": [
+          "Yes, you can track your online transaction limit usage over time through your account statements or transaction history in the online banking platform. Need more information?",
+          "You can monitor your online transaction limit usage over time by reviewing your account statements or transaction history in the online banking platform. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_inquiry",
+        "patterns": [
+          "How can I inquire about my current online transaction limit?",
+          "Checking online transaction limit",
+          "Viewing transaction limit on online banking"
+        ],
+        "responses": [
+          "You can inquire about your current online transaction limit by logging in to your online banking account and accessing the transaction limit details. Need assistance?",
+          "To check your current online transaction limit, simply log in to your online banking account and view the transaction limit details. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_applicability",
+        "patterns": [
+          "Does the online transaction limit apply to all types of transactions?",
+          "Scope of online transaction limit",
+          "Applicability of transaction limit on online banking"
+        ],
+        "responses": [
+          "Yes, the online transaction limit applies to various types of transactions such as transfers, bill payments, and withdrawals conducted through online banking. Need more details?",
+          "The online transaction limit is applicable to a wide range of transactions including transfers, bill payments, and withdrawals processed via online banking. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_reset_frequency",
+        "patterns": [
+          "How frequently is the online transaction limit reset?",
+          "Reset frequency of online transaction limit",
+          "Timing for resetting transaction limit on online banking"
+        ],
+        "responses": [
+          "The online transaction limit may reset daily, weekly, or monthly depending on your account settings. You can verify the reset frequency in your account details. Need more information?",
+          "The reset frequency of the online transaction limit varies depending on your account settings, typically occurring daily, weekly, or monthly. You can confirm the timing in your account details. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "online_transaction_limit_restrictions",
+        "patterns": [
+          "Are there any restrictions on the online transaction limit?",
+          "Limitations of online transaction limit",
+          "Rules for transaction limit on online banking"
+        ],
+        "responses": [
+          "Online transaction limits are subject to certain restrictions based on your account type and banking regulations. You can find detailed information in your account terms or by contacting customer service. Need more details?",
+          "There are specific restrictions associated with online transaction limits determined by your account type and banking regulations. You can review these restrictions in your account terms or by contacting customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_increase",
+        "patterns": [
+          "How can I increase my offline transaction limit?",
+          "Increasing offline transaction limit",
+          "Raising transaction limit for offline purchases"
+        ],
+        "responses": [
+          "To increase your offline transaction limit, you can submit a request through our customer service or visit our branch for assistance. Need more information?",
+          "You can request an increase in your offline transaction limit by contacting customer service or visiting our branch. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_decrease",
+        "patterns": [
+          "Can I decrease my offline transaction limit?",
+          "Reducing offline transaction limit",
+          "Lowering transaction limit for offline purchases"
+        ],
+        "responses": [
+          "Yes, you can request to decrease your offline transaction limit for added security. Simply contact customer service or visit our branch for assistance. Need assistance?",
+          "If you wish to decrease your offline transaction limit, you can contact customer service or visit our branch for assistance. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_explanation",
+        "patterns": [
+          "Why is there a limit on offline transactions?",
+          "Explanation for offline transaction limits",
+          "Reasons for transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Offline transaction limits are in place for security purposes to protect your account from unauthorized access and fraud. Need more information?",
+          "Transaction limits on offline purchases are designed to enhance security and prevent unauthorized transactions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_reset",
+        "patterns": [
+          "How often are offline transaction limits reset?",
+          "Resetting offline transaction limits",
+          "Frequency of transaction limit reset for offline purchases"
+        ],
+        "responses": [
+          "Offline transaction limits may reset daily, weekly, or monthly depending on your account settings. You can check the reset frequency with customer service. Need more details?",
+          "The frequency of offline transaction limit resets varies depending on your account settings. You can verify the reset frequency with customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_review",
+        "patterns": [
+          "Can my offline transaction limit be reviewed?",
+          "Reviewing offline transaction limits",
+          "Reevaluation of transaction limit for offline purchases"
+        ],
+        "responses": [
+          "Yes, your offline transaction limit can be reviewed periodically based on your account activity and usage patterns. You can contact customer service for a review. Need more information?",
+          "Your offline transaction limit may be reviewed periodically to ensure it meets your needs. If you'd like a review, please contact customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_types",
+        "patterns": [
+          "What types of offline transaction limits are there?",
+          "Categories of offline transaction limits",
+          "Different limits for offline purchases"
+        ],
+        "responses": [
+          "Offline transaction limits may include daily, weekly, and monthly limits for various types of transactions such as purchases and cash withdrawals. Need more details?",
+          "Offline transaction limits can be categorized into daily, weekly, and monthly limits for different types of transactions such as purchases and cash withdrawals. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_notification",
+        "patterns": [
+          "Do you notify customers when they reach their offline transaction limit?",
+          "Notification for reaching offline transaction limit",
+          "Alerts for exceeding transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Yes, we provide notifications when you're approaching or have reached your offline transaction limit. You can set up alerts through our mobile app or contact customer service. Need assistance?",
+          "We offer notifications to alert you when you're nearing or have exceeded your offline transaction limit. You can customize these alerts through our mobile app or contact customer service. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_customization",
+        "patterns": [
+          "Can I customize my offline transaction limits?",
+          "Adjusting offline transaction limits",
+          "Personalizing transaction limits for offline purchases"
+        ],
+        "responses": [
+          "Yes, you can customize your offline transaction limits based on your financial needs and preferences. Simply contact customer service or visit our branch to make adjustments. Need more information?",
+          "You have the flexibility to customize your offline transaction limits according to your financial requirements. Just contact customer service or visit our branch to adjust them. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_usage",
+        "patterns": [
+          "How can I check my remaining offline transaction limit?",
+          "Checking available offline transaction limit",
+          "Viewing usage of transaction limit on offline purchases"
+        ],
+        "responses": [
+          "You can view your remaining offline transaction limit by logging in to your online banking account or mobile app. Need assistance?",
+          "To check your available offline transaction limit, simply log in to your online banking account or mobile app. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_enforcement",
+        "patterns": [
+          "What happens if I exceed my offline transaction limit?",
+          "Consequences of exceeding offline transaction limit",
+          "Penalties for surpassing transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Exceeding your offline transaction limit may result in transaction failures or temporary suspension of your card. It's important to stay within your limits. Need more information?",
+          "If you exceed your offline transaction limit, you may experience transaction failures or temporary suspension of your card. Please ensure you stay within your limits. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_security",
+        "patterns": [
+          "How does the offline transaction limit enhance security?",
+          "Security benefits of offline transaction limit",
+          "Protection provided by transaction limit on offline purchases"
+        ],
+        "responses": [
+          "The offline transaction limit acts as an additional layer of security by limiting the amount of funds that can be spent in a single transaction without online authorization. Need more details?",
+          "The offline transaction limit helps enhance security by limiting the potential financial loss in case your card is lost or stolen and used for unauthorized transactions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_responsibility",
+        "patterns": [
+          "Who is responsible for managing my offline transaction limit?",
+          "Accountability for offline transaction limit management",
+          "Role in overseeing transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Managing your offline transaction limit is your responsibility to ensure it aligns with your financial needs and security considerations. We're here to support you with tools and guidance. Need more information?",
+          "You are responsible for managing your offline transaction limit to ensure it meets your financial requirements and security considerations. We provide tools and assistance to help you manage it effectively. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_adjustment_timeframe",
+        "patterns": [
+          "How long does it take for an offline transaction limit adjustment to take effect?",
+          "Adjustment timeframe for offline transaction limit",
+          "When does the new transaction limit apply for offline purchases?"
+        ],
+        "responses": [
+          "Offline transaction limit adjustments typically take effect immediately or within [mention timeframe] after submission. You can confirm the timing with customer service. Need more details?",
+          "Offline transaction limit adjustments usually take effect immediately or within [mention timeframe] after submission. You can verify the exact timeframe with customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_exceed_notification",
+        "patterns": [
+          "Will I be notified if I exceed my offline transaction limit?",
+          "Alert for surpassing offline transaction limit",
+          "Notification for exceeding transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Yes, we provide notifications if you exceed your offline transaction limit. You can customize these alerts through our mobile app or contact customer service. Need assistance?",
+          "You'll receive notifications if you exceed your offline transaction limit. You can customize these alerts through our mobile app or contact customer service. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_usage_tracking",
+        "patterns": [
+          "Can I track my offline transaction limit usage over time?",
+          "Monitoring usage of offline transaction limit",
+          "Tracking transaction limit usage for offline purchases"
+        ],
+        "responses": [
+          "Yes, you can monitor your offline transaction limit usage over time through your account statements or transaction history in the online banking platform or mobile app. Need more information?",
+          "You can track your offline transaction limit usage over time by reviewing your account statements or transaction history in the online banking platform or mobile app. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_inquiry",
+        "patterns": [
+          "How can I inquire about my current offline transaction limit?",
+          "Checking offline transaction limit",
+          "Viewing transaction limit for offline purchases"
+        ],
+        "responses": [
+          "You can inquire about your current offline transaction limit by logging in to your online banking account or mobile app. Need assistance?",
+          "To check your current offline transaction limit, simply log in to your online banking account or mobile app. Need further guidance?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_applicability",
+        "patterns": [
+          "Does the offline transaction limit apply to all types of transactions?",
+          "Scope of offline transaction limit",
+          "Applicability of transaction limit for offline purchases"
+        ],
+        "responses": [
+          "Yes, the offline transaction limit applies to various types of transactions such as purchases and cash withdrawals made using your card. Need more details?",
+          "The offline transaction limit is applicable to a wide range of transactions including purchases and cash withdrawals made using your card. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_reset_frequency",
+        "patterns": [
+          "How frequently is the offline transaction limit reset?",
+          "Reset frequency of offline transaction limit",
+          "Timing for resetting transaction limit for offline purchases"
+        ],
+        "responses": [
+          "The reset frequency of the offline transaction limit varies depending on your account settings, typically occurring daily, weekly, or monthly. You can verify the timing with customer service. Need more information?",
+          "The reset frequency of the offline transaction limit varies depending on your account settings, typically occurring daily, weekly, or monthly. You can confirm the timing with customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "offline_transaction_limit_restrictions",
+        "patterns": [
+          "Are there any restrictions on the offline transaction limit?",
+          "Limitations of offline transaction limit",
+          "Rules for transaction limit on offline purchases"
+        ],
+        "responses": [
+          "Offline transaction limits are subject to certain restrictions based on your account type and banking regulations. You can find detailed information in your account terms or by contacting customer service. Need more details?",
+          "There are specific restrictions associated with offline transaction limits determined by your account type and banking regulations. You can review these restrictions in your account terms or by contacting customer service. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_coverage",
+        "patterns": [
+          "What does my health insurance cover?",
+          "Coverage details of health insurance",
+          "What is included in my health insurance plan?"
+        ],
+        "responses": [
+          "Your health insurance coverage typically includes medical expenses such as hospitalization, doctor visits, prescription drugs, and preventive care. Need more details?",
+          "Health insurance coverage usually includes medical services such as hospital stays, doctor consultations, prescription medications, and preventive care. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_plan_types",
+        "patterns": [
+          "What types of health insurance plans do you offer?",
+          "Categories of health insurance plans",
+          "Options for health insurance coverage"
+        ],
+        "responses": [
+          "We offer various types of health insurance plans including HMOs, PPOs, and high-deductible plans. Each has different coverage levels and costs. Need more information?",
+          "Our health insurance options include HMOs, PPOs, and high-deductible plans, each offering different levels of coverage and cost. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_benefits",
+        "patterns": [
+          "What are the benefits of having health insurance?",
+          "Advantages of health insurance",
+          "Reasons to get health insurance"
+        ],
+        "responses": [
+          "Health insurance provides financial protection against unexpected medical expenses, access to a network of healthcare providers, and coverage for preventive care. Need more details?",
+          "The benefits of health insurance include financial security in case of medical emergencies, access to quality healthcare, and coverage for preventive services. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_enrollment",
+        "patterns": [
+          "How do I enroll in health insurance?",
+          "Process for signing up for health insurance",
+          "Enrollment steps for health insurance coverage"
+        ],
+        "responses": [
+          "You can enroll in health insurance during open enrollment periods or after qualifying life events. Visit our website or contact our enrollment team for assistance. Need more information?",
+          "To enroll in health insurance, you can visit our website or contact our enrollment team. Open enrollment periods and qualifying life events allow for enrollment outside of these periods. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_cost",
+        "patterns": [
+          "How much does health insurance cost?",
+          "Cost of health insurance coverage",
+          "Premiums for health insurance plans"
+        ],
+        "responses": [
+          "The cost of health insurance varies depending on factors such as your age, location, coverage level, and plan type. Our representatives can provide personalized quotes. Need more details?",
+          "Health insurance costs are influenced by factors like age, location, coverage level, and plan type. For personalized quotes, please contact our representatives. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_claim_process",
+        "patterns": [
+          "How do I file a health insurance claim?",
+          "Process for submitting health insurance claims",
+          "Steps to claim reimbursement from health insurance"
+        ],
+        "responses": [
+          "To file a health insurance claim, you typically need to submit a claim form along with supporting documents such as medical bills. Our customer service team can assist you with the process. Need more information?",
+          "The process for filing a health insurance claim involves submitting a claim form and relevant documents such as medical bills. Our customer service team can guide you through the process. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_preauthorization",
+        "patterns": [
+          "Do I need preauthorization for medical services?",
+          "Preapproval requirement for health insurance",
+          "Process for obtaining preauthorization"
+        ],
+        "responses": [
+          "Some medical services may require preauthorization from your health insurance provider to ensure coverage. Our customer service team can help you determine if preauthorization is needed. Need more details?",
+          "Certain medical services may require preauthorization from your health insurance provider. Our customer service team can assist you in determining if preauthorization is necessary. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_network",
+        "patterns": [
+          "Is my doctor in-network?",
+          "Finding healthcare providers in my health insurance network",
+          "Locating doctors covered by my health insurance"
+        ],
+        "responses": [
+          "You can check if your doctor is in-network by visiting our website or contacting our customer service team. In-network providers typically offer lower costs for covered services. Need more information?",
+          "To find out if your doctor is in-network, please visit our website or contact our customer service team. In-network providers often offer reduced costs for covered services. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_copayment",
+        "patterns": [
+          "What is a copayment?",
+          "Understanding copays for health insurance",
+          "Explanation of copayment in health insurance"
+        ],
+        "responses": [
+          "A copayment, or copay, is a fixed amount you pay for covered services at the time of service. It's separate from coinsurance and deductible costs. Need more details?",
+          "A copayment, or copay, is a predetermined amount you pay for covered services at the time of service. It's distinct from coinsurance and deductible expenses. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_deductible",
+        "patterns": [
+          "What is a deductible?",
+          "Understanding deductibles for health insurance",
+          "Explanation of deductible in health insurance"
+        ],
+        "responses": [
+          "A deductible is the amount you must pay out-of-pocket for covered services before your health insurance plan starts to pay. It resets annually. Need more information?",
+          "A deductible is the amount you're responsible for paying before your health insurance plan begins to cover expenses. It resets each year. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_coinsurance",
+        "patterns": [
+          "What is coinsurance?",
+          "Understanding coinsurance for health insurance",
+          "Explanation of coinsurance in health insurance"
+        ],
+        "responses": [
+          "Coinsurance is the percentage of costs you share with your health insurance provider after you've met your deductible. Your plan covers the remaining percentage. Need more details?",
+          "Coinsurance is the portion of costs you and your health insurance provider share after you've paid your deductible. Your plan covers the remaining percentage. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_exclusions",
+        "patterns": [
+          "What is excluded from my health insurance coverage?",
+          "Items not covered by health insurance",
+          "Exclusions in my health insurance policy"
+        ],
+        "responses": [
+          "Health insurance typically does not cover certain services or treatments such as cosmetic procedures, elective surgery, and experimental treatments. Review your policy for specific exclusions. Need more information?",
+          "Health insurance may exclude coverage for certain services like cosmetic procedures, elective surgery, and experimental treatments. Refer to your policy for details on exclusions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_waiting_period",
+        "patterns": [
+          "Is there a waiting period for health insurance coverage?",
+          "Duration of waiting period for health insurance",
+          "When does my health insurance coverage start?"
+        ],
+        "responses": [
+          "Some health insurance plans have waiting periods before coverage begins, particularly for pre-existing conditions or certain treatments. Review your policy for details. Need more details?",
+          "Certain health insurance plans may have waiting periods before coverage begins, especially for pre-existing conditions or specific treatments. Refer to your policy for information on waiting periods. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_renewal",
+        "patterns": [
+          "How do I renew my health insurance?",
+          "Process for renewing health insurance coverage",
+          "Steps to renew my health insurance policy"
+        ],
+        "responses": [
+          "Your health insurance may automatically renew each year, or you may need to take action to renew it. Contact our customer service team or check your policy for renewal instructions. Need more information?",
+          "Your health insurance policy may renew automatically or require active renewal each year. Contact our customer service team or review your policy for guidance on renewal procedures. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_family_coverage",
+        "patterns": [
+          "Can I get health insurance coverage for my family?",
+          "Adding family members to health insurance",
+          "Family health insurance options"
+        ],
+        "responses": [
+          "Yes, you can often add family members to your health insurance plan. Contact our customer service team or review your policy for details on family coverage options. Need more details?",
+          "You can typically include family members in your health insurance coverage. Contact our customer service team or review your policy to explore family coverage options. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_policy_terms",
+        "patterns": [
+          "Where can I find the terms of my health insurance policy?",
+          "Locating policy terms for health insurance",
+          "Accessing details of my health insurance plan"
+        ],
+        "responses": [
+          "You can find the terms of your health insurance policy in your policy documents, which are typically available online or provided to you when you enroll. Need more information?",
+          "Your health insurance policy terms are outlined in your policy documents, which you can access online or receive upon enrollment. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_claim_status",
+        "patterns": [
+          "How can I check the status of my health insurance claim?",
+          "Tracking health insurance claim",
+          "Viewing progress of my health insurance reimbursement"
+        ],
+        "responses": [
+          "You can check the status of your health insurance claim by logging in to your online account or contacting our customer service team. Need more details?",
+          "To track the status of your health insurance claim, you can log in to your online account or reach out to our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_coverage_changes",
+        "patterns": [
+          "Can I change my health insurance coverage?",
+          "Adjusting health insurance plan",
+          "Modifying my health insurance policy"
+        ],
+        "responses": [
+          "Yes, you may be able to change your health insurance coverage during open enrollment periods or after qualifying life events. Contact our customer service team for assistance. Need more information?",
+          "You may have options to change your health insurance coverage during open enrollment periods or after qualifying life events. Contact our customer service team to explore modification options. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "health_insurance_provider_network",
+        "patterns": [
+          "How do I find healthcare providers in my health insurance network?",
+          "Locating in-network doctors for health insurance",
+          "Finding healthcare facilities covered by my health insurance"
+        ],
+        "responses": [
+          "You can search for healthcare providers in your health insurance network using our online provider directory or by contacting our customer service team. Need more details?",
+          "To find healthcare providers in your health insurance network, use our online provider directory or reach out to our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_types",
+        "patterns": [
+          "What types of savings schemes do you offer?",
+          "Categories of savings plans",
+          "Options for saving money"
+        ],
+        "responses": [
+          "We offer various types of savings schemes including fixed deposits, recurring deposits, high-interest savings accounts, and retirement savings plans. Need more details?",
+          "Our savings schemes include fixed deposits, recurring deposits, high-interest savings accounts, and retirement savings plans, each tailored to different financial goals. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_interest_rates",
+        "patterns": [
+          "What are the interest rates for your savings schemes?",
+          "Rates for savings plans",
+          "Interest offered on savings accounts"
+        ],
+        "responses": [
+          "Interest rates for our savings schemes vary depending on the type of account and prevailing market conditions. You can find the latest rates on our website or by contacting our customer service team. Need more information?",
+          "Interest rates for our savings schemes are subject to change based on market conditions. You can check the latest rates on our website or inquire with our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_features",
+        "patterns": [
+          "What are the features of your savings schemes?",
+          "Characteristics of savings plans",
+          "Benefits of saving with your bank"
+        ],
+        "responses": [
+          "Our savings schemes offer competitive interest rates, flexible terms, online account access, and options for automatic transfers. Need more details?",
+          "Features of our savings schemes include competitive interest rates, flexible terms, online account management, and convenient transfer options. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_opening_process",
+        "patterns": [
+          "How do I open a savings scheme?",
+          "Process for starting a savings plan",
+          "Steps to open a savings account"
+        ],
+        "responses": [
+          "You can open a savings scheme online through our website or visit one of our branches to speak with a representative. You'll need to provide identification and funding for the account. Need more information?",
+          "To open a savings scheme, you can apply online through our website or visit a branch to speak with a representative. Ensure you have proper identification and funds to deposit. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_deposit_limits",
+        "patterns": [
+          "What are the deposit limits for your savings schemes?",
+          "Maximum deposit allowed for saving plans",
+          "Limits on savings scheme contributions"
+        ],
+        "responses": [
+          "Deposit limits for our savings schemes vary depending on the type of account and regulatory guidelines. You can find specific limits on our website or by contacting our customer service team. Need more details?",
+          "Deposit limits for our savings schemes are subject to account type and regulatory requirements. You can review specific limits on our website or inquire with our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_withdrawal_process",
+        "patterns": [
+          "How do I withdraw from a savings scheme?",
+          "Process for making withdrawals from saving plans",
+          "Steps to withdraw funds from a savings account"
+        ],
+        "responses": [
+          "You can withdraw funds from your savings scheme online, through our mobile app, at an ATM, or by visiting a branch. Ensure you have proper identification and know any applicable withdrawal restrictions. Need more information?",
+          "To withdraw funds from your savings scheme, you can use online banking, our mobile app, an ATM, or visit a branch. Make sure you have proper identification and are aware of any withdrawal limitations. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_balance_inquiry",
+        "patterns": [
+          "How can I check my balance in a savings scheme?",
+          "Process for viewing savings account balance",
+          "Steps to inquire about savings plan balance"
+        ],
+        "responses": [
+          "You can check your savings scheme balance online, through our mobile app, at an ATM, or by contacting our customer service team. Need more details?",
+          "To view your savings scheme balance, you can use online banking, our mobile app, an ATM, or contact our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_interest_calculation",
+        "patterns": [
+          "How is interest calculated on a savings scheme?",
+          "Calculation method for interest on saving plans",
+          "Interest accrual process for savings accounts"
+        ],
+        "responses": [
+          "Interest on savings schemes is typically calculated based on the daily balance and credited to your account periodically. The specific calculation method may vary depending on the type of account. Need more information?",
+          "Interest on savings schemes is usually calculated based on your daily account balance and credited to your account at regular intervals. The exact calculation method may vary by account type. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_closure_process",
+        "patterns": [
+          "How do I close a savings scheme?",
+          "Process for terminating saving plans",
+          "Steps to close a savings account"
+        ],
+        "responses": [
+          "To close a savings scheme, you can submit a closure request online, at a branch, or by contacting our customer service team. Ensure all funds are withdrawn and any outstanding transactions are cleared. Need more details?",
+          "To close a savings scheme, you can initiate a closure request online, at a branch, or by contacting our customer service team. Make sure to withdraw all funds and settle any pending transactions. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_automatic_transfers",
+        "patterns": [
+          "Can I set up automatic transfers for my savings scheme?",
+          "Setting up recurring deposits for saving plans",
+          "Automating fund transfers to a savings account"
+        ],
+        "responses": [
+          "Yes, you can schedule automatic transfers to your savings scheme on a recurring basis. This can be done through online banking, our mobile app, or by contacting our customer service team. Need more information?",
+          "You can arrange automatic transfers to your savings scheme at regular intervals for convenience. Simply set up recurring transfers through online banking, our mobile app, or by reaching out to our customer service team. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_tax_implications",
+        "patterns": [
+          "What are the tax implications of a savings scheme?",
+          "Tax treatment of saving plans",
+          "How are savings account earnings taxed?"
+        ],
+        "responses": [
+          "The tax implications of a savings scheme depend on factors such as your jurisdiction, account type, and earnings. Consult a tax advisor for personalized advice. Need more details?",
+          "Tax treatment of savings scheme earnings varies based on your location, account type, and other factors. It's advisable to consult a tax advisor for guidance on your specific situation. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_contribution_frequency",
+        "patterns": [
+          "How often can I contribute to a savings scheme?",
+          "Frequency of saving plan contributions",
+          "Timing for making deposits to a savings account"
+        ],
+        "responses": [
+          "You can contribute to your savings scheme as frequently as you like, subject to any deposit limits and account terms. Need more information?",
+          "The frequency of contributions to your savings scheme is typically flexible, allowing you to deposit funds according to your financial goals and account terms. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_security",
+        "patterns": [
+          "How secure is my savings scheme account?",
+          "Safety measures for saving plans",
+          "Protecting my savings account"
+        ],
+        "responses": [
+          "We employ various security measures to safeguard your savings scheme account, including encryption, multi-factor authentication, and fraud monitoring. Need more details?",
+          "Your savings scheme account is protected by security measures such as encryption, multi-factor authentication, and ongoing fraud monitoring to ensure the safety of your funds. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_upgrades",
+        "patterns": [
+          "Can I upgrade my savings scheme account?",
+          "Enhancing saving plans",
+          "Options for improving my savings account"
+        ],
+        "responses": [
+          "Yes, you may be able to upgrade your savings scheme account to a different type with enhanced features and benefits. Contact our customer service team or visit a branch for assistance. Need more information?",
+          "You can explore options to upgrade your savings scheme account to a different type that offers additional features and benefits. Contact our customer service team or visit a branch to discuss upgrade options. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_statement",
+        "patterns": [
+          "How can I access my savings scheme account statement?",
+          "Viewing saving plan statements",
+          "Steps to obtain a savings account statement"
+        ],
+        "responses": [
+          "You can access your savings scheme account statement online through our website or mobile app, or receive paper statements by mail. Need more details?",
+          "To view your savings scheme account statement, you can access it online through our website or mobile app, or opt to receive paper statements by mail. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_fees",
+        "patterns": [
+          "Are there any fees associated with a savings scheme account?",
+          "Charges for saving plans",
+          "Costs of maintaining a savings account"
+        ],
+        "responses": [
+          "Fees associated with a savings scheme account may include maintenance fees, transaction fees, and penalties for early withdrawals. Review your account terms for details. Need more information?",
+          "Fees for a savings scheme account may include maintenance charges, transaction fees, and penalties for certain actions such as early withdrawals. Refer to your account terms for fee details. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_closure_fees",
+        "patterns": [
+          "Are there any fees for closing a savings scheme account?",
+          "Charges for terminating saving plans",
+          "Costs of closing a savings account"
+        ],
+        "responses": [
+          "Closing a savings scheme account may incur fees such as early closure penalties or account closure charges. Review your account terms for details. Need more details?",
+          "There may be fees associated with closing a savings scheme account, such as early closure penalties or account closure charges. Check your account terms for fee information. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_upgrade_fees",
+        "patterns": [
+          "Are there any fees for upgrading my savings scheme account?",
+          "Charges for enhancing saving plans",
+          "Costs of upgrading a savings account"
+        ],
+        "responses": [
+          "Upgrading your savings scheme account may involve fees such as account upgrade charges or minimum balance requirements. Contact our customer service team or review your account terms for details. Need more information?",
+          "There may be fees associated with upgrading your savings scheme account, including account upgrade charges or minimum balance requirements. Contact our customer service team or review your account terms for fee information. Need further clarification?"
+        ]
+      },
+      {
+        "tag": "savings_scheme_account_closure_process",
+        "patterns": [
+          "How do I close my savings scheme account?",
+          "Process for terminating saving plans",
+          "Steps to close a savings account"
+        ],
+        "responses": [
+          "To close your savings scheme account, you can submit a closure request online, at a branch, or by contacting our customer service team. Ensure all funds are withdrawn and any outstanding transactions are cleared. Need more details?",
+          "To close your savings scheme account, initiate a closure request online, at a branch, or by contacting our customer service team. Make sure to withdraw all funds and settle any pending transactions. Need further clarification?"
+        ]
+      }
+      
+  
+
+    ]
+
+  }
+  
