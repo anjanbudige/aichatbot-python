@@ -13,18 +13,9 @@ In this project, we deploy the chatbot using Flask. Two deployment options are p
 
 This repository contains the starter files.
 
-### Clone the repository and create a virtual environment
-
-```bash
-git clone https://github.com/python-engineer/chatbot-deployment.git
-cd chatbot-deployment
-python3 -m venv venv
-. venv/bin/activate
-```
-
 Clone repo and create a virtual environment
 ```
-git clone https://github.com/anjan-budige/aichatbot-python
+git clone https://github.com/anjanbudige/aichatbot-python
 cd aichatbot-python
 python3 -m venv venv
 . venv/bin/activate
@@ -64,7 +55,7 @@ the following command to test it in the console.
 1. Create New Environment
 2. Download Files
    ```
-   git clone https://github.com/anjan-budige/aichatbot-python
+   git clone https://github.com/anjanbudige/aichatbot-python
    cd aichatbot-python
    ```
 3. Go to Environment (Activate)
