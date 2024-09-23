@@ -1,6 +1,6 @@
 # AI Chat Bot Python
 
-This project demonstrates the deployment of a chatbot created in [this](https://github.com/anjan-budige/aichatbot-python) using Flask and JavaScript.
+This project demonstrates the deployment of a chatbot created using Flask and JavaScript.
 
 ## Overview
 
