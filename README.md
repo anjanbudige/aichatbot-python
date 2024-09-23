@@ -90,8 +90,6 @@ the following command to test it in the console.
 
 ---
 
-This README is part of the AI Chat Bot Python project. For more information and updates, please visit the [repository](https://github.com/anjan-budige/aichatbot-python).
-
-If you have any questions, feedback, or suggestions, feel free to open an issue or contact the project maintainers.
+If you have any questions, feedback, or suggestions, feel free to open an issue or contact me.
 
 
